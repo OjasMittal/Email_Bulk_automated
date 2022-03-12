@@ -14,7 +14,7 @@ def send_email():
     email = yagmail.SMTP(user="automail.ojas.python@gmail.com", password="ENTER PASSWORD HERE")
     email.send(to=row['email'],
                subject=f"Your {row['interest']} news for today!",
-               contents=f"Hi {row['name']}\n See what's on about {row['interest']} today. \n{news_feed.get()}\nArdit")
+               contents=f"Hi {row['name']}\n See what's on about {row['interest']} today. \n{news_feed.get()}")
 
 
 while True:
